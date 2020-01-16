@@ -1,0 +1,107 @@
+.App {
+  height: 92vh;
+  width: 100%;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+}
+
+.header {
+  text-align: center;
+}
+
+.upper {
+  margin: 0px 0px 25px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  height: 25px;
+  color: white;
+  background-color: #fed136;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#mainNav {
+  border: none;
+  padding: 25px 16px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBrand {
+  color: #fed136;
+  font-size: 28px;
+  font-family: 'Kaushan Script', cursive;
+  margin: 0px 16px 0px 0px;
+  padding: 5px 0px;
+}
+
+.container-two {
+  margin: 0px 26px;
+  padding: 0px 15px;
+}
+
+.nav-btn {
+  color: white;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 16px 14px;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+#dropdown {
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  top: 100px; 
+  left: 0; 
+  background-color: gray;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: open 1s;
+  overflow: hidden;
+}
+
+@keyframes open {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 300px;
+  }
+}
+
+@media(max-width: 653px){
+  .container-two {
+    display: none;
+  }
+  #mobile-nav {
+    display: initial;
+  }
+}
